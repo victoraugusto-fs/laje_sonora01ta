@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./inscricao.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <title>Laje Sonora | Oficinas</title>
+</head>
+<body>
+    <header class="conteudo topo">
+        <a href="index.html" class="logo">Laje Sonora</a>
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="oficinas.html">Oficinas</a>
+            <a href="inscricao.html">Inscrição</a><div class="atual"></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="conteudo"></div>
+
+        <h1 class="titulo-pagina">Inscrição</h1>
+        <div class="inscricao"></div>
+
+        <section class="explicacao">
+            <h2>O que acontece depois</h2>
+            <p>Assim que você enviar o formulário, 
+            a gente confere se ainda tem vaga na oficina escolhida.</p>
+            <p>Em até dois dias você recebe uma mensagem com a data da aula experimental, que é gratuita.</p>
+            <p>Se a turma estiver cheia, seu nome entra na lista de espera 
+            e você é avisado quando abrir uma vaga.</p>
+            <p class="aviso">Quem tem menos de 18 anos precisa vir à primeira aula com um responsável.</p>
+        </section>
+
+        <form action="#" method="post" class="formulario">
+            <div class="linha">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="nome" id="nome" placeholder="Como está no seu documento" required>
+                <div class="campo">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento" placeholder="dd/mm/aaaa" required>
+                </div>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="voce@exemplo.com" required>
+                    <div class="campo">
+                        <label for="telefone">Celular com DDD</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(11) 91234 5678" required>
+                    </div>
+                    </div>
+                    <div class="campo">
+                        <label for="">Oficina</label>
+                        <select name="oficina" id="oficina" required>
+                            <option value="">Escolha uma oficina</option>
+                            <option value="violao">Violão do zero</option>
+                            <option value="beats">Produção de beats</option>
+                            <option value="canto">Canto em grupo</option>
+                            <option value="teclado">Teclado e harmonia</option>
+                            <option value="bateria">Bateria e percussão</option>
+                            <option value="gravacao">Gravação no celular</option>
+                        </select>
+                    </div>
+
+                    <fieldest class="grupo">
+                        <legend>Você toca algum instrumento?</legend>
+
+                        <div class="opcoes">
+                            <div class="opcao">
+                                <input type="radio" name="toca" id="tocaSim" value="sim"> <label for="tocaSim">Sim</label>
+                            </div>
+                            <div class="opcao">
+                                <input type="radio" name="toca" id="tocaPouco" value="pouco"> <label for="tocaPouco">Um Pouco</label>
+                            </div>
+                            <div class="opcao">
+                                <input type="radio" name="toca" id="tocaNao" value="nao"> <label for="tocaNao">Ainda Não</label>
+                            </div>
+                        </div>
+                    </fieldest>
+
+                    <fieldset>
+                        <div class="grupo">
+                            <legend>O que você tem em casa para praticar?</legend>
+                            
+                            <div class="opcoes">
+                                <div class="opcao">
+                                    <input type="checkbox" name="tem" id="temViolao" value="violao"><label for="">Violão</label>
+                                </div>
+                                <div class="opcao">
+                                    <input type="checkbox" name="tem" id="temTeclado" value="teclado"><label for="">Teclado</label>
+                                </div>
+                                <div class="opcao">
+                                    <input type="checkbox" name="tem" id="temComputador" value="computador"><label for="">Computador</label> 
+                                </div>
+                                <div class="opcao">
+                                    <input type="checkbox" name="tem" id="temFone" value="fone"><label for="">Fone de ouvido</label>
+                                </div>
+                                <div class="opcao">
+                                    <input type="checkbox" name="tem" id="temNada" value="nada"><label for="">Nada por enquanto</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <label for="">Por que você quer fazer essa oficina</label>
+                    <div class="campo">
+                        <textarea name="motivo" id="motivo" placeholder="Conte em poucas linhas"></textarea>
+                    </div>
+
+                    <div class="opcao">
+                        <input type="checkbox" name="responsavel" id="responsavel" required> <label for="">Meu responsável sabe desta inscrição</label>
+                    </div>
+
+                    <div>
+                        <button class="botao">
+                            <input type="submite" name="" id=""> Enviar inscrição
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteudo rodape-colunas">
+            <div class="rodape-coluna">
+                <h4>Laje Sonora</h4>
+                <br>
+                <p>Escola livre de música para adolescentes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="rodape">
+        <div class="conteudo rodape-colunas">
+            <div class="rodape-coluna">
+                <h4>Endereço</h4>
+                <br>
+                <p>Rua das Antenas, 120.</p>
+                <p>São Paulo, SP</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="rodape">
+        <div class="conteudo rodape-colunas">
+            <div class="rodape-coluna">
+                <h4>Horários</h4>
+                <br>
+                <p>Segunda a sexta, das 16h às 21h.</p>
+                <p>Sábado, das 9h às 13h</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="rodape">
+        <div class="conteudo rodape-colunas">
+            <div class="rodape-coluna">
+                <h4>Conntatos</h4>
+                <br>
+                <p>contato@lajesonora.com.br</p>
+                <p>(11) 91234 5678</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
